@@ -58,6 +58,14 @@
 
 ---
 
+## 📷 Screenshot
+
+<div>
+    <img src="docs/todo-screenshot.png" />
+</div>
+
+---
+
 ## 🚀 Quick Start
 
 1. Clone or download this repository.
