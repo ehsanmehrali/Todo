@@ -11,7 +11,7 @@ Todo = Todo(db)
 def index():
     todo_list = Todo.todo.query.all()
     log('Index route accessed')
-    return render_template("index.html", todo_list=todo_list)
+    return render_template("./templates/index.html", todo_list=todo_list)
 
 
 @app.route("/add", methods=["POST"])
