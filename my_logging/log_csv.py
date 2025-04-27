@@ -11,7 +11,7 @@ FILE_PATH = os.path.join(PROJECT_ROOT, "logs", "logs.csv")
 
 def log(message):
     file_exists = os.path.isfile(FILE_PATH)
-    with open(FILE_PATH, mode='a') as file:
+    with open(FILE_PATH, mode='a', encoding='utf-8') as file:
         fieldnames = ['Time', 'Message']
         writer = csv.DictWriter(file, fieldnames=fieldnames)
 

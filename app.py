@@ -2,7 +2,7 @@ from flask import Flask, render_template, request, redirect, url_for
 from my_logging.log_csv import log
 from db_managers.db_sqlite import get_db, Todo
 
-app = Flask(__name__, template_folder="")
+app = Flask(__name__, template_folder="templates")
 db = get_db(app)
 Todo = Todo(db)
 
@@ -11,7 +11,7 @@ Todo = Todo(db)
 def index():
     todo_list = Todo.todo.query.all()
     log('Index route accessed')
-    return render_template("./templates/index.html", todo_list=todo_list)
+    return render_template("index.html", todo_list=todo_list)
 
 
 @app.route("/add", methods=["POST"])

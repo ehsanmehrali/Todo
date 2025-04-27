@@ -12,7 +12,7 @@ FILE_PATH = os.path.join(PROJECT_ROOT, "logs", "logs.json")
 def log(message):
     log_entry = {'Time': time.asctime(time.localtime(time.time())), 'Message': message}
     if os.path.isfile(FILE_PATH):
-        with open(FILE_PATH, 'r+') as file:
+        with open(FILE_PATH, 'r+', encoding='utf-8') as file:
             data = json.load(file)
             data.append(log_entry)
             file.seek(0)
