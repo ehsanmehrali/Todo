@@ -2,7 +2,7 @@
 
 <h1 align="center">Flask Todo App</h1>
 
-<div>
+<div align="center">
   <img src="https://img.shields.io/badge/OS-Linux%2FWindows-blue" alt="OS" />
   <img src="https://img.shields.io/badge/Made%20with-Python%203.10-blue" alt="Python" />
   <img src="https://img.shields.io/badge/Framework-Flask-orange" alt="Flask" />
@@ -10,6 +10,7 @@
   <img src="https://img.shields.io/badge/License-MIT-green" alt="License" />
   <img src="https://img.shields.io/badge/Maintained-Yes-brightgreen" alt="Maintained" />
   <img src="https://img.shields.io/badge/Status-Under%20Development-yellow" alt="Status" />
+  <p><strong>A simple and clean **Todo List** project built with **Flask**, **SQLite**, **SQLAlchemy**, and **Bootstrap**.</strong></p>
 
 </div>
 
